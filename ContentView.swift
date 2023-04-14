@@ -9,10 +9,24 @@ struct ContentView: View {
             TextField("number", value: $Int1, format: .number)
             TextField("number", value: $Int2, format: .number)
             Button {
-                
-                
+            
             } label: {
                 Text("Multiply")
+            }
+            Button {
+            
+            } label: {
+                Text("Add")
+            }
+            Button {
+            
+            } label: {
+                Text("Subtract")
+            }
+            Button {
+            
+            } label: {
+                Text("Divide")
             }
             Text("\(answer)")
         }
