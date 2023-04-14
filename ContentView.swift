@@ -7,7 +7,6 @@ struct ContentView: View {
         VStack {
             TextField("number", value: $Int1, format: .number)
             TextField("number", value: $Int2, format: .number)
-            
         }
     }
 }
