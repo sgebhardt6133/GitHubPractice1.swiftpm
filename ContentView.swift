@@ -13,23 +13,21 @@ struct ContentView: View {
 
             Button {
                 answer = Int1 * Int2
-                
-            
             } label: {
                 Text("Multiply")
             }
             Button {
-            
+                answer = Int1 + Int2
             } label: {
                 Text("Add")
             }
             Button {
-            
+                answer = Int1 - Int2
             } label: {
                 Text("Subtract")
             }
             Button {
-            
+                answer = Int1/Int2
             } label: {
                 Text("Divide")
             }
