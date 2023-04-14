@@ -10,23 +10,21 @@ struct ContentView: View {
             TextField("number", value: $Int2, format: .number)
             Button {
                 answer = Int1 * Int2
-                
-            
             } label: {
                 Text("Multiply")
             }
             Button {
-            
+                answer = Int1 + Int2
             } label: {
                 Text("Add")
             }
             Button {
-            
+                answer = Int1 - Int2
             } label: {
                 Text("Subtract")
             }
             Button {
-            
+                answer = Int1/Int2
             } label: {
                 Text("Divide")
             }
