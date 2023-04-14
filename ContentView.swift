@@ -7,7 +7,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             TextField("number", value: $Int1, format: .number)
+                .textFieldStyle(.roundedBorder)
             TextField("number", value: $Int2, format: .number)
+                .textFieldStyle(.roundedBorder)
+
             Button {
                 answer = Int1 * Int2
                 
