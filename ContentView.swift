@@ -8,30 +8,44 @@ struct ContentView: View {
         VStack {
             TextField("number", value: $Int1, format: .number)
                 .textFieldStyle(.roundedBorder)
+                .multilineTextAlignment(.center)
+                .padding()
             TextField("number", value: $Int2, format: .number)
                 .textFieldStyle(.roundedBorder)
-
-            Button {
-                answer = Int1 * Int2
-            } label: {
-                Text("Multiply")
+                .multilineTextAlignment(.center)
+                .padding()
+            HStack {
+                Button {
+                    answer = Int1 * Int2
+                } label: {
+                    Text("Multiply")
+                }
+                Spacer()
+                    .frame(width: 25)
+                Button {
+                    answer = Int1 + Int2
+                } label: {
+                    Text("Add")
+                }
             }
-            Button {
-                answer = Int1 + Int2
-            } label: {
-                Text("Add")
+            .padding(EdgeInsets(top: 15, leading: 5, bottom: 5, trailing: 5))
+            HStack {
+                Button {
+                    answer = Int1 - Int2
+                } label: {
+                    Text("Subtract")
+                }
+                Spacer()
+                    .frame(width: 25)
+                Button {
+                    answer = Int1/Int2
+                } label: {
+                    Text("Divide")
+                }
             }
-            Button {
-                answer = Int1 - Int2
-            } label: {
-                Text("Subtract")
-            }
-            Button {
-                answer = Int1/Int2
-            } label: {
-                Text("Divide")
-            }
+            .padding(EdgeInsets(top: 5, leading: 5, bottom: 10, trailing: 5))
             Text("\(answer)")
+                .font(.title2)
         }
     }
 }
